@@ -28,7 +28,7 @@ public abstract class Token {
      */
     protected final boolean isValid;
 
-    protected Token(String type, Object value, String extra, boolean isValid) {
+    public Token(String type, Object value, String extra, boolean isValid) {
         this.type = type;
         this.value = value;
         this.extra = extra;
