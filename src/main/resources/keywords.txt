@@ -26,7 +26,7 @@ associativity	convenience	didSet	dynamic	final	get	indirect	infix	lazy
 left	mutating	none	nonmutating	optional	override	postfix	precedence	prefix
 Protocol	required	right	set	some	Type	unowned	weak	willSet
 
-// keywords that begin with the number sign
+// preprocessor directives
 $begin with number sign
 
 #available	#colorLiteral	#column	#dsohandle	#elseif	#else	#endif
