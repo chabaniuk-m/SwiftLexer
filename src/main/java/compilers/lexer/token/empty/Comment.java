@@ -25,8 +25,8 @@ public class Comment extends Empty {
 
     /**
      * Converts text starting at beginIndex to a proper Comment
-     * @param beginIndex must point to the beginning of the comment (either '//' or '/*')
-     * @return not null Comment instance
+     * @param beginIndex must point to the '/' sign
+     * @return Comment instance if text is comment, null otherwise
      */
     public static Comment of(String code, AtomicInteger beginIndex) {
         // ignore last space if multiline comment is invalid

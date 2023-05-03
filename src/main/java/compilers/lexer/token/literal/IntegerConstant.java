@@ -8,7 +8,7 @@ public class IntegerConstant extends Literal {
         INTEGER_CONSTANT,
         INVALID_INTEGER_CONSTANT
     }
-    public IntegerConstant(Integer value) {
+    private IntegerConstant(Integer value) {
         super("INTEGER_CONSTANT", value);
     }
 

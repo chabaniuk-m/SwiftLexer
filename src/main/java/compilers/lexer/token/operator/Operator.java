@@ -8,14 +8,14 @@ public class Operator extends Token {
     private enum Type {
         INVALID_OPERATOR,               // ++= --= or ---= must be considered a valid operator
         PRIMARY_EXPRESSION_OPERATOR,    // () [] .
-        UNARY,                          // ! ? + -
-        ARITHMETIC,                     // + - * / %
-        COMPARISON,                     // == != > < >= <=
+        UNARY_OPERATOR,                          // ! ? + -
+        ARITHMETIC_OPERATOR,                     // + - * / %
+        COMPARISON_OPERATOR,                     // == != > < >= <=
         OPERATOR,                       // parentheses
-        NIL_COALESCING,                 // ??
-        COMMA,
-        ASSIGNMENT,                     // += = *= <<= |=
-        RANGE                           // ... ..<
+        NIL_COALESCING_OPERATOR,                 // ??
+        COMMA_OPERATOR,
+        ASSIGNMENT_OPERATOR,                     // += = *= <<= |=
+        RANGE_OPERATOR                           // ... ..<
     }
 
     public Operator(Type type, Object value, String extra, boolean isValid) {
