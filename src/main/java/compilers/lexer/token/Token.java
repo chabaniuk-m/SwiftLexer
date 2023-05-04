@@ -10,7 +10,7 @@ import java.util.Objects;
  * or explain the king of error which forced token to be invalid.
  * Extra information can be provided or not.
  */
-public abstract class Token {
+public class Token {
 
     /**
      * Not null string that describes the type of token (INTEGER_CONSTANT, INVALID_IDENTIFIER, KEYWORD...).
