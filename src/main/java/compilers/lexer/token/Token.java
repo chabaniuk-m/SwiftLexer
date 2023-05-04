@@ -1,7 +1,9 @@
 package compilers.lexer.token;
 
+import java.util.Objects;
+
 /**
- * Class that describes general token instance.
+ * Immutable class that describes general token instance.
  * Contains its type, value (must be always provided)
  * and marks whether token is valid or not (appropriate type should be provided)
  * Additional has extra information that can widely describe the type
@@ -11,11 +13,11 @@ package compilers.lexer.token;
 public abstract class Token {
 
     /**
-     * String that describes the type of token (INTEGER_CONSTANT, INVALID_IDENTIFIER, KEYWORD...)
+     * Not null string that describes the type of token (INTEGER_CONSTANT, INVALID_IDENTIFIER, KEYWORD...).
      */
     protected final String type;
     /**
-     * value of the token
+     * Not null value of the token
      */
     protected final Object value;
     /**
@@ -49,6 +51,23 @@ public abstract class Token {
      */
     public boolean isValid() {
         return isValid;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = type.hashCode() + 31 * value.hashCode() + 27 * extra.hashCode();
+        return isValid ? hash : -hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) return false;
+        if (obj instanceof Token token && token.hashCode() == this.hashCode()) {
+            return  Objects.equals(this.type, token.type) &&
+                    Objects.equals(this.value, token.value) &&
+                    Objects.equals(this.extra, token.extra) &&
+                    Objects.equals(this.isValid, token.isValid);
+        } else return false;
     }
 
     @Override
