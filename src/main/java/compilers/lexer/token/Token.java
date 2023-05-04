@@ -62,6 +62,7 @@ public abstract class Token {
     @Override
     public boolean equals(Object obj) {
         if (obj == null) return false;
+        if (this == obj) return true;
         if (obj instanceof Token token && token.hashCode() == this.hashCode()) {
             return  Objects.equals(this.type, token.type) &&
                     Objects.equals(this.value, token.value) &&
