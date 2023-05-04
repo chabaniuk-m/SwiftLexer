@@ -21,4 +21,8 @@ public class LexerTest {
             throw new RuntimeException(e);
         }
     }
+
+    protected static void printTitle(String title) {
+        System.out.println("\n<<<" + title + " test>>>\n");
+    }
 }
