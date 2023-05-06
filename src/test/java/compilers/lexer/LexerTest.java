@@ -16,7 +16,7 @@ public class LexerTest {
      */
     protected static String readTestData(String filename) {
         try {
-            return Files.readString(Path.of(RESOURCE_DIRECTORY, filename + ".txt")) + " ";
+            return Files.readString(Path.of(RESOURCE_DIRECTORY, filename + ".txt"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
