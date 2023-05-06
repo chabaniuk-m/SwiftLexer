@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class EmptyTest extends LexerTest {
+public class WhitespaceTest extends LexerTest {
 
     @Test
     public void singleWhitespaceCharacter() {
