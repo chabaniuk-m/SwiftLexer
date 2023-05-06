@@ -1,0 +1,4 @@
+/* #/* I've started writing a multiline comment,
+ * but forgot to put start and slash at the end
+ * :( #/*
+only slash in the end /

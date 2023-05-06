@@ -1,0 +1,14 @@
+/* multiline comment in one line */#/**
+ * Converts symbols starting at beginIndex to WHITESPACE_SEQUENCE or WHITESPACE_SYMBOL
+ * saving each one explicitly (space = '\s', tab = '\t', ...).
+ * Function process all whitespace characters except of '\n'.
+ * If it is a single whitespace character, value will be "'\s'" for example,
+ * otherwise add double quotation instead of single.
+ * Method implemented as FA Machine
+ * @param beginIndex must point to a whitespace character in code
+ * @return Whitespace instance or null if beginIndex does not point to a whitespace character
+ */#/*
+ Незважаючи на біль (біль) 👊
+ Я продовжую свій бій (бій) 💥
+ Світ палає, а ти дій! 🔥
+ */

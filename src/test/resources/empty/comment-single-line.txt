@@ -1,0 +1,8 @@
+// Hi, I'm just a simple comment
+////////////////////////
+// MY AMAZING PROGRAM //
+////////////////////////
+// let equation1: String = "56*x + 18*y = 38"
+// let equation2: String = "0.5*x - 24*y = 42"
+// HOW TO SOLVE THIS IMPOSSIBLE SYSTEM????$&^!@%$&%!@($^!@$^
+//
