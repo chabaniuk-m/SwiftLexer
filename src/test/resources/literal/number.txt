@@ -1,0 +1,97 @@
+~// VALID DECIMAL INTEGERS
+2023
++2023
+-005
+923747249832497234982349829348
+-02395273150182734012394871582
+8_045_235_910
+2_______3_____
++2937_2398_23_92____
+-4_____
+
+~// INVALID DECIMAL INTEGERS
+~// actually operator and identifier
++_239
+-_923
+-_
+~// just invalid decimal numbers
+-9237stefania
+-0_b01010
++239_8283sdf
+8293____2883o
+
+~// VALID BINARY INTEGERS
+0b0
+0b1
+0b0010101010
+0b0___110101010__11___
++0b0
++0b1
++0b0010101010
++0b0___110101010__11___
+-0b0
+-0b1
+-0b0010101010
+-0b0___110101010__11___
+
+~// INVALID BINARY INTEGERS
+0b
+-0b
++0b
+0b_01010
+-0b_1
++0b_101
+~// invalid digit for binary integer literal
+0b20101001
+0b1010108010
+0b002
++0b20101001
++0b1010108010
++0b002
+-0b20101001
+-0b1010108010
+-0b002
+
+~// VALID OCTAL INTEGERS
+0o0
+-0o71
++0o23777
+0o1235123_23____2323___
+-0o1235123_23____2323___
++0o1235123_23____2323___
+
+~// INVALID OCTAL INTEGERS
+0o
++0o
+-0o
+0o_
++0o_231
+-0o_000124
+0o9
+0o00001804
++0o4239
+-0o1342f
+0o1413ukraine
+
+~// VALID HEX INTEGERS
+0x0
+-0xfabcdef173
++0x12ABCEFD9
+-0xA_B_C_D_E_F_E_D_C_B_A___
++Oxa___b__3453_c___d___e___f__b__0
+0x000
+
+~// INVALID HEX INTEGERS
+~// next character (space) is considered a part of a hex number
+0x
+-0x
++0x
+~// _ char is invalid immediately after a 0x
+-0x_abc
+-0x____54
+~// x char is invalid in the part after 0x
++0x0x
+~// invalid hex integer digit
+0xasodigb
+-0x823_98h023
++0xab32500y
