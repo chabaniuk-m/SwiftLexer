@@ -95,3 +95,46 @@
 0xasodigb
 -0x823_98h023
 +0xab32500y
+
+~// VALID DECIMAL FLOAT
+0.0
+-0.028
++9183.29
+-6E34
++3.53E-235
++54E+252
+-142e-35
++63.3524e0
+0e0
+
+~// INVALID DECIMAL FLOAT
+~// number actually should be 0.9
+.9
+~// actually integer and . operator
+-6.
++71.
+~// actually integer . operator and identifier
+11_._11
+-3.24f
+0.5u
+792.83y73
+~// actually float . operator and integer literal
+4e-6.8
++45.35e+242.52
+-13.0023e-589.12
+4E-6.8
++45.35E+242.52
+-13.0023E-589.12
+~// actually operator and invalid float
+-.2478
++.203
+~// actually identifier and number
+e+67
+e-7592
++e-9742
+-e+928
+E+67
+E-7592
++E-9742
+-E+928
+~// float numbers are only available in decimal format
