@@ -1,0 +1,13 @@
+~// next character (space) is considered a part of a hex number
+0x
+-0x
++0x
+~// _ char is invalid immediately after a 0x
+-0x_abc
+-0x____54
+~// x char is invalid in the part after 0x
++0x0x
+~// invalid hex integer digit
+0xasodigb
+-0x823_98h023
++0xab32500y
